@@ -1,0 +1,14 @@
+fn allowed() {
+    const A: u32 = 1;
+    const B: u32 = 2;
+
+    fn first() {}
+    fn second() {}
+
+    'outer: loop {
+        break 'outer;
+    }
+    'inner: loop {
+        break 'inner;
+    }
+}

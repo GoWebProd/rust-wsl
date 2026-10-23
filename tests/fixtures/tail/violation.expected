@@ -1,0 +1,51 @@
+fn violation(req: Req) -> Resp {
+    let resp = client.send(req);
+    log_response(&resp);
+
+    Ok(resp)
+}
+
+fn short_fn(a: u32) -> u32 {
+    run(a);
+
+    a + 1
+}
+
+fn closure() {
+    let f = |a: u32| {
+        let b = a + 1;
+        run(b);
+
+        b * 2
+    };
+
+    f(1);
+}
+
+fn short_closure(xs: Vec<u32>) -> Vec<u32> {
+    xs.into_iter()
+        .map(|x| {
+            let y = f(x);
+
+            y + 1
+        })
+        .collect()
+}
+
+fn macro_tail(a: u32) -> Vec<u32> {
+    run(a);
+    run(a);
+
+    vec![a]
+}
+
+async fn match_arm(input: &Input, host: Host) -> Result<Out> {
+    match input.session.as_deref() {
+        Some(session) => {
+            let conversation = super::conversation_id(context)?;
+
+            run_in_session(input, &host, session, &conversation).await
+        }
+        None => run_one_shot(input, host).await,
+    }
+}

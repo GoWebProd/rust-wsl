@@ -1,0 +1,12 @@
+fn violation(a: u32) {
+    run();
+    let b = a + 1;
+    run(b);
+    c = b;
+    run(c);
+
+    if a > 0 {
+        run();
+    }
+    self.count += 1;
+}

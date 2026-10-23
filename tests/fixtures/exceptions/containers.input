@@ -1,0 +1,26 @@
+mod m {
+    fn a() {}
+    const B: u32 = 1;
+    struct S;
+}
+
+impl S {
+    fn a(&self) {}
+    fn b(&self) {}
+    const C: u32 = 1;
+}
+
+fn lit() -> S {
+    S {
+        first_field: 1,
+        second_field: 2,
+    }
+}
+
+fn arms(x: u32) {
+    match x {
+        1 => run(),
+        2 => run(),
+        _ => {}
+    }
+}

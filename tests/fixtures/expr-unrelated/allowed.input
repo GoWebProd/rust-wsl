@@ -1,0 +1,16 @@
+fn allowed(items: Vec<u32>) {
+    let n = items.len();
+    notify(n);
+
+    let m = fetch();
+    run(m.value);
+
+    total = 1;
+    log(total);
+
+    let name = "x";
+    println!("{name}");
+
+    self.count = 1;
+    self.notify();
+}

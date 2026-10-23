@@ -1,0 +1,11 @@
+fn assign() {
+    let mut total = 0;
+    total = compute();
+
+    log(total);
+
+    first = 1;
+    second = 2;
+
+    log(second);
+}

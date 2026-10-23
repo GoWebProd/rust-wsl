@@ -1,0 +1,19 @@
+macro_rules! m {
+    () => {
+        run();
+        let a = 1;
+        run(a);
+    };
+}
+
+fn f() {
+    macro_rules! n {
+        () => {
+            run();
+            let b = 1;
+            run(b);
+        };
+    }
+
+    n!();
+}

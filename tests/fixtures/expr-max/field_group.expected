@@ -1,0 +1,7 @@
+fn field_group(x: &S) {
+    let mut s = x.clone();
+    s.a = 1;
+    s.b = 2;
+
+    update(&s);
+}

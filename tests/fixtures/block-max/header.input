@@ -1,0 +1,17 @@
+fn header() {
+    let a = 1;
+    let b = 2;
+    // b is the guard
+    if b > 0 {
+        run(a);
+    }
+}
+
+fn header_on_prev() {
+    let a = 1;
+    // b is the guard
+    let b = 2;
+    if b > 0 {
+        run(a);
+    }
+}

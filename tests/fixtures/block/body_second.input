@@ -1,0 +1,20 @@
+fn body_second(cond: bool, kind: Kind) {
+    let a = 1;
+    if cond {
+        run();
+        run(a);
+    }
+
+    let b = 2;
+    if cond {
+        run();
+    } else {
+        run(b);
+    }
+
+    let m = 3;
+    match kind {
+        Kind::A => run(),
+        Kind::B => run(m),
+    }
+}

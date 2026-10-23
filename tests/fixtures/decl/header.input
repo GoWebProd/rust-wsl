@@ -1,0 +1,8 @@
+fn header() {
+    run();
+    // limits
+    const LIMIT: u32 = 3;
+    run();
+    #[allow(unused)]
+    fn helper() {}
+}

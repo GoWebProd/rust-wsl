@@ -1,0 +1,17 @@
+fn violation(ready: bool, items: Vec<u32>) {
+    run();
+    if ready {
+        run();
+    }
+
+    let user = load();
+    let other = 1;
+    if user.is_admin() {
+        run();
+    }
+
+    let n = items.len();
+    for x in items {
+        run(x);
+    }
+}

@@ -1,0 +1,20 @@
+fn empty_if(a: bool) {
+    if a {
+        run();
+    };
+    run();
+}
+
+fn empty_match(a: bool) {
+    match a {
+        _ => {}
+    };
+    run();
+}
+
+fn empty_unsafe() {
+    unsafe {
+        run();
+    };
+    run();
+}

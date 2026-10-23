@@ -1,0 +1,17 @@
+fn allowed(xs: Vec<u32>) {
+    for x in &xs {
+        run(x);
+    }
+
+    out.flush();
+    out.flush();
+
+    let n = 1;
+    out.flush(n);
+
+    match n {
+        _ => {}
+    }
+
+    out.flush();
+}

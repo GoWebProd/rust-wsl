@@ -1,0 +1,13 @@
+fn header(ready: bool) {
+    run();
+    // gate
+    if ready {
+        run();
+    }
+
+    run();
+    #[cfg(unix)]
+    if ready {
+        run();
+    }
+}

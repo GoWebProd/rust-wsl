@@ -1,0 +1,22 @@
+fn valid_name(bytes: &[u8], first_ok: bool) -> bool {
+    let rest_ok = bytes
+        .iter()
+        .all(|c| c.is_ascii_alphanumeric() || *c == b'-');
+
+    // `-` is in the first-char class of the rest set
+    // leading `-` is rejected separately
+    let valid = first_ok && rest_ok && !bytes.is_empty();
+
+    valid
+}
+
+async fn connect(cfg: &Config, host: &Host, generation: u64) -> Result<()> {
+    let mut master = OwnedMaster::spawn(cfg, host, generation).await?;
+
+    // On error `master` is dropped here, which tears the connection down.
+    master
+        .wait_ready_with_timeout(&cfg.ssh_program_path, cfg.authentication_timeout)
+        .await?;
+
+    Ok(())
+}

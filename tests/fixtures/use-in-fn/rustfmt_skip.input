@@ -1,0 +1,13 @@
+fn f() {
+    #[rustfmt::skip]
+    use std::fmt::Write;
+
+    run();
+}
+
+#[rustfmt::skip]
+fn g() {
+    use std::io::Read;
+
+    run();
+}

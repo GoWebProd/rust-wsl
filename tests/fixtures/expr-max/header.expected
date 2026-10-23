@@ -1,0 +1,15 @@
+fn header() {
+    let dir = TempDir::new().unwrap();
+    let pool = connect();
+
+    // open the schema
+    create_all_tables(&pool);
+}
+
+fn header_on_prev() {
+    let dir = TempDir::new().unwrap();
+
+    // open the pool
+    let pool = connect();
+    create_all_tables(&pool);
+}

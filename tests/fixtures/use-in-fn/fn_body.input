@@ -1,0 +1,5 @@
+fn f() {
+    use std::fmt::Write;
+
+    run();
+}

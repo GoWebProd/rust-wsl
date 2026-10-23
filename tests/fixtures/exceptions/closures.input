@@ -1,0 +1,14 @@
+fn closures(xs: Vec<u32>) {
+    let f = |x: u32| {
+        run(x);
+        let y = x;
+        run(y);
+    };
+
+    xs.iter().for_each(|x| {
+        run(x);
+        let z = x;
+        run(z);
+    });
+    f(1);
+}

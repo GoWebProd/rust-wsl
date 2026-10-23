@@ -1,0 +1,14 @@
+fn violation(xs: Vec<u32>) {
+    for x in &xs {
+        run(x);
+    }
+    out.flush();
+
+    'outer: loop {
+        break 'outer;
+    }
+    out.flush();
+
+    const LIMIT: u32 = 3;
+    out.flush();
+}

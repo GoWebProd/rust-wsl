@@ -1,0 +1,12 @@
+fn f() {
+    run();
+
+    let a = 1;
+    run(a);
+
+    {
+        use std::fmt::Write;
+
+        run();
+    }
+}

@@ -1,0 +1,29 @@
+fn allowed() {
+    let a = 1;
+
+    let b = a + 1;
+    if b > 0 {
+        run();
+    }
+
+    run();
+
+    let c = 2;
+    if c > 0 {
+        run();
+    }
+
+    let d = 3;
+    let e = 4;
+
+    if e > d {
+        run();
+    }
+}
+
+fn first_is_prev() {
+    let c = 2;
+    if c > 0 {
+        run();
+    }
+}

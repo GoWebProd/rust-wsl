@@ -1,0 +1,21 @@
+fn violation() {
+    run();
+    use std::fmt;
+    use std::io;
+    const LIMIT: u32 = 3;
+    run();
+}
+
+fn labeled() {
+    run();
+    'outer: for i in 0..3 {
+        run(i);
+        break 'outer;
+    }
+    let x = 1;
+}
+
+fn after_let() {
+    let a = 1;
+    fn helper() {}
+}

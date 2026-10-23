@@ -1,0 +1,4 @@
+fn one_line() {
+    run(); let a = 1; if a > 0 { run(); } out.flush();
+    run(); const A: u32 = 1; return;
+}

@@ -1,0 +1,8 @@
+fn group() {
+    let a = 1;
+    // b is the guard
+    let b = a;
+    if b > 0 {
+        run();
+    }
+}

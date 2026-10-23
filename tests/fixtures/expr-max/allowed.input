@@ -1,0 +1,12 @@
+fn allowed() {
+    run();
+
+    let pool = connect();
+    create_all_tables(&pool);
+
+    let a = 1;
+    let b = 2;
+
+    let c = 3;
+    run(c);
+}

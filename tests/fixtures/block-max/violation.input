@@ -1,0 +1,14 @@
+fn violation() {
+    let a = 1;
+    let b = 2;
+    if b > 0 {
+        run(a);
+    }
+
+    let c = 3;
+    c = 4;
+    d = c;
+    if d > 0 {
+        run();
+    }
+}

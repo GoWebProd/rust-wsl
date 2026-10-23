@@ -1,0 +1,7 @@
+fn doc(a: u32) {
+    run(a);
+    /// documented call
+    run(a);
+    /* block comment */
+    run(a);
+}

@@ -1,0 +1,11 @@
+fn lets() {
+    let a = 1;
+
+    // second value
+    let b = 2;
+    let c = 3;
+
+    // third value
+    let d = 4;
+    run(a, b, c, d);
+}

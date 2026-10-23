@@ -1,0 +1,16 @@
+fn header_comment() {
+    run();
+    /*
+     * first line
+     * let a = 1;
+     */
+    let b = 2;
+    run(b);
+}
+
+fn trailing_comment() {
+    run(); /* first
+     * second */
+    let c = 3;
+    run(c);
+}

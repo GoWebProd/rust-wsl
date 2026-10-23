@@ -1,0 +1,11 @@
+fn multiline() {
+    run();
+
+    let msg = "first
+    let a = 1;
+last";
+    run(msg);
+
+    let n = 2;
+    run(n);
+}

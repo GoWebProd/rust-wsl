@@ -1,0 +1,21 @@
+fn related(items: Vec<u32>, opt: Option<u32>) {
+    let xs = items;
+    for x in xs {
+        run(x);
+    }
+
+    let found = opt;
+    if let Some(v) = found {
+        run(v);
+    }
+
+    let it = make();
+    while let Some(v) = it.next() {
+        run(v);
+    }
+
+    x = 1;
+    if x > 0 {
+        run();
+    }
+}

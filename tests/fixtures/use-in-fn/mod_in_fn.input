@@ -1,0 +1,9 @@
+fn f() {
+    mod inner {
+        use std::fmt::Write;
+
+        pub fn g() {}
+    }
+
+    run();
+}

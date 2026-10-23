@@ -1,0 +1,51 @@
+fn inner_in_fn() {
+    #![rustfmt::skip]
+    run();
+    let a = 1;
+    if a > 0 {
+        run();
+    }
+    return;
+}
+
+mod m {
+    #![rustfmt::skip]
+
+    fn g() {
+        run();
+        let b = 1;
+        run(b);
+    }
+}
+
+fn on_expr(a: bool) {
+    run();
+    #[rustfmt::skip]
+    if a {
+        run();
+        let b = 1;
+        run(b);
+    }
+    #[rustfmt::skip]
+    match a {
+        true => {
+            run();
+            let c = 1;
+            run(c);
+        }
+        false => {}
+    }
+}
+
+fn skip_as_prev() {
+    run();
+    #[rustfmt::skip]
+    let m = [1, 0, 0];
+    out.flush();
+}
+
+fn control() {
+    run();
+    let d = 1;
+    run(d);
+}

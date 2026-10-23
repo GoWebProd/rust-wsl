@@ -1,0 +1,14 @@
+fn violation(items: Vec<u32>, ctx: Ctx) {
+    let n = items.len();
+    notify(&ctx);
+
+    count = 1;
+    log(&items);
+
+    let (a, b) = pair();
+    log(a);
+    run(b);
+
+    let _ = send();
+    run();
+}

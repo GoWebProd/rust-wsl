@@ -1,0 +1,9 @@
+fn f() {
+    let g = || {
+        use std::fmt::Write;
+
+        run();
+    };
+
+    g();
+}

@@ -1,0 +1,19 @@
+#[rustfmt::skip]
+fn table() {
+    run();
+    let a = 1;
+    if a > 0 {
+        run();
+    }
+    return;
+}
+
+fn partial() {
+    run();
+    #[rustfmt::skip]
+    let m = [
+        1, 0, 0,
+        0, 1, 0,
+    ];
+    run(m);
+}

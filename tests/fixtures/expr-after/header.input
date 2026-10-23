@@ -1,0 +1,11 @@
+fn header(ready: bool) {
+    if ready {
+        run();
+    }
+    // flush the buffer
+    out.flush();
+
+    const LIMIT: u32 = 3;
+    #[cfg(unix)]
+    out.flush();
+}

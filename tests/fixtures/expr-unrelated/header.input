@@ -1,0 +1,9 @@
+fn header(ctx: Ctx) {
+    let n = 1;
+    // tell everyone
+    notify(&ctx);
+
+    let m = 2;
+    #[cfg(unix)]
+    notify(&ctx);
+}

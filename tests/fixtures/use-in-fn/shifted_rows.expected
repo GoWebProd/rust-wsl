@@ -1,0 +1,15 @@
+fn f() {
+    run();
+
+    let a = 1;
+    run(a);
+
+    let b = 2;
+    run(b);
+
+    {
+        use std::fmt::Write;
+
+        run();
+    }
+}

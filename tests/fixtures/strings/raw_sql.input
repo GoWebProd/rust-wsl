@@ -1,0 +1,10 @@
+fn raw_sql() {
+    run();
+    let sql = r#"
+    let a = 1;
+    select 1
+"#;
+    run(sql);
+    let n = 2;
+    run(n);
+}

@@ -1,0 +1,13 @@
+[package]
+name = "rust-wsl"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+
+[workspace]
+
+[dependencies]
+anyhow = "1"
+tree-sitter = "0.27"
+tree-sitter-rust = "0.24"

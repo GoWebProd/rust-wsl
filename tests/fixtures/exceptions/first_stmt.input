@@ -1,0 +1,23 @@
+fn first_let() {
+    let a = 1;
+    run(a);
+}
+
+fn first_jump(x: u32) -> u32 {
+    return x;
+}
+
+fn first_tail() -> u32 {
+    // comment
+    compute()
+}
+
+fn first_in_branches(a: bool) {
+    if a {
+        let b = 1;
+        run(b);
+    } else {
+        out.flush();
+        run();
+    }
+}

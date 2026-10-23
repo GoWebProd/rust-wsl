@@ -1,0 +1,13 @@
+fn arms(x: u32) {
+    match x {
+        1 => {
+            run();
+            let y = x;
+            run(y);
+        }
+        _ => {
+            run(x);
+            run(x);
+        }
+    }
+}

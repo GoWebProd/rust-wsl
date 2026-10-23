@@ -1,0 +1,33 @@
+fn allowed(x: u32) -> u32 {
+    if x > 0 {
+        run();
+
+        return 1;
+    }
+
+    let y = x;
+
+    return y;
+}
+
+fn single(xs: Vec<u32>) {
+    for x in xs {
+        if skip(x) {
+            continue;
+        }
+
+        run(x);
+    }
+}
+
+fn single_else(x: Option<u32>) -> u32 {
+    let Some(v) = x else {
+        return 0;
+    };
+
+    v
+}
+
+fn first_is_jump(x: u32) -> u32 {
+    return x;
+}

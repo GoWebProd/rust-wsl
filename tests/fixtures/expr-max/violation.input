@@ -1,0 +1,5 @@
+async fn violation() {
+    let dir = TempDir::new().unwrap();
+    let pool = SqlitePool::connect(":memory:").await.unwrap();
+    create_all_tables(&pool).await.unwrap();
+}

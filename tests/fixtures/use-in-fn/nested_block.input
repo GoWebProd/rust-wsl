@@ -1,0 +1,9 @@
+fn f(a: bool) {
+    if a {
+        loop {
+            use std::io::Read;
+
+            run();
+        }
+    }
+}

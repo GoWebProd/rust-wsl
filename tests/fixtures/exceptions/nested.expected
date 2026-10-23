@@ -1,0 +1,16 @@
+fn nested(a: bool) {
+    if a {
+        run();
+
+        let b = 1;
+        loop {
+            run(b);
+            out.flush();
+
+            let c = b;
+            if c > 0 {
+                break;
+            }
+        }
+    }
+}

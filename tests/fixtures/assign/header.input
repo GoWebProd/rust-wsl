@@ -1,0 +1,13 @@
+fn header() {
+    run();
+    // the answer
+    let a = 42;
+    run(a);
+    #[allow(unused)]
+    let b = 1;
+    run(b);
+    // detached
+
+    let c = 2;
+    run(c);
+}

@@ -1,0 +1,6 @@
+fn r1_only() {
+    call();
+
+    let a = 1;
+    run(a);
+}

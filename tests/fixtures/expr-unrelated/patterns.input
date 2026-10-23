@@ -1,0 +1,41 @@
+fn variant_name_is_not_a_binding(o: Option<u32>) {
+    let Some(x) = o else {
+        return;
+    };
+    Some(1);
+}
+
+fn shorthand_field(n: u32) {
+    let n = n + 1;
+    mk(S { n });
+}
+
+fn debug_arg() {
+    let n = 1;
+    println!("{n:?}");
+}
+
+fn escaped_braces() {
+    let n = 1;
+    println!("{{n}}");
+}
+
+fn positional_arg() {
+    let n = 1;
+    println!("{0}", 1);
+}
+
+fn width_arg() {
+    let p = 3;
+    println!("{:>p$}", 1);
+}
+
+fn precision_arg() {
+    let p = 2;
+    println!("{:.p$}", 1.0);
+}
+
+fn named_width(x: u32) {
+    let w = 5;
+    println!("{x:w$}");
+}

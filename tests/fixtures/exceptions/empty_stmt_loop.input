@@ -1,0 +1,20 @@
+fn empty_loop() {
+    loop {
+        run();
+    };
+    run();
+}
+
+fn empty_while(a: bool) {
+    while a {
+        run();
+    };
+    run();
+}
+
+fn empty_for(xs: Vec<u32>) {
+    for x in xs {
+        run(x);
+    };
+    run();
+}

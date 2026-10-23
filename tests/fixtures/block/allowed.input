@@ -1,0 +1,28 @@
+fn allowed(items: Vec<u32>) {
+    let user = load();
+    if user.ready() {
+        run();
+    }
+
+    let n = items.len();
+    while n > 0 {
+        run();
+    }
+
+    let first = items.first();
+    match first {
+        Some(x) => run(x),
+        None => {}
+    }
+
+    let flag = check();
+    if other {
+        run(flag);
+    }
+
+    let mode = pick();
+    match kind {
+        Kind::A => run(mode),
+        Kind::B => {}
+    }
+}

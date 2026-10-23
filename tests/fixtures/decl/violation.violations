@@ -1,0 +1,9 @@
+3 R7 decl
+3 R8 use-in-fn
+4 R8 use-in-fn
+5 R7 decl
+6 R4a expr-after
+11 R7 decl
+13 R5 jump
+15 R1 assign
+20 R7 decl

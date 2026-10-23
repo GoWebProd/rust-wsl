@@ -1,0 +1,13 @@
+fn ret(x: u32) -> u32 {
+    run();
+
+    return x
+}
+
+fn brk() {
+    loop {
+        run();
+
+        break
+    }
+}

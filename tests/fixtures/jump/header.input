@@ -1,0 +1,13 @@
+fn header(x: u32) -> u32 {
+    run();
+    // done
+    return x;
+}
+
+fn header_loop() {
+    loop {
+        run();
+        // leave
+        break;
+    }
+}

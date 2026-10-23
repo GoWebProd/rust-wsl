@@ -1,0 +1,58 @@
+fn violation(x: u32) -> u32 {
+    run();
+
+    if x > 0 {
+        run();
+
+        return 1;
+    }
+
+    for i in 0..x {
+        run(i);
+
+        if i > 3 {
+            break;
+        }
+
+        continue;
+    }
+
+    let y = x;
+
+    return y;
+}
+
+fn short_block(args: &[String]) {
+    for arg in args {
+        if !options_done && arg == "--" {
+            options_done = true;
+
+            continue;
+        }
+    }
+}
+
+fn short_fn(x: u32) -> u32 {
+    run();
+
+    return x;
+}
+
+fn closure() {
+    let f = |x: u32| {
+        run();
+
+        return x;
+    };
+    f(1);
+}
+
+fn let_else(x: Option<u32>) {
+    let Some(v) = x else {
+        warn!("missing");
+
+        return;
+    };
+
+    run(v);
+}

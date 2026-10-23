@@ -1,0 +1,23 @@
+fn kinds(opt: Option<u32>) {
+    run();
+
+    match opt {
+        _ => run(),
+    }
+
+    if let Some(v) = opt {
+        run(v);
+    }
+
+    while let Some(v) = next() {
+        run(v);
+    }
+
+    loop {
+        run();
+    }
+
+    {
+        run();
+    }
+}

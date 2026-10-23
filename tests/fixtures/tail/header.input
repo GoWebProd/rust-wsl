@@ -1,0 +1,6 @@
+fn header(a: u32) -> u32 {
+    run(a);
+    run(a);
+    // the answer
+    a + 1
+}

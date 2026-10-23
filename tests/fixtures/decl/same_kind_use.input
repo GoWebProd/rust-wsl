@@ -1,0 +1,4 @@
+fn same_kind_use() {
+    use std::fmt;
+    use std::io;
+}

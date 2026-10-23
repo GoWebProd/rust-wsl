@@ -1,0 +1,12 @@
+fn allowed(a: u32) {
+    // header of the first statement
+    run(a);
+
+    // detached from the previous statement by a blank line
+    run(a);
+
+    #[allow(unused)]
+    run(a);
+    run(a); // trailing note
+    run(a);
+}

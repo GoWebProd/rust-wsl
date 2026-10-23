@@ -1,0 +1,13 @@
+fn body_header(cond: bool) {
+    let a = 1;
+    if cond {
+        // note
+        run(a);
+    }
+
+    let b = 2;
+    if cond {
+        #[allow(unused)]
+        run(b);
+    }
+}

@@ -1,0 +1,15 @@
+fn allowed() {
+    let a = 1;
+    let b = 2;
+    c = a + b;
+    d += 1;
+    let e = 3;
+
+    run();
+
+    let f = 4;
+    g = f;
+
+    let h = 5;
+    run(h);
+}

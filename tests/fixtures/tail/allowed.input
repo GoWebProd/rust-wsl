@@ -1,0 +1,35 @@
+fn separated(a: u32) -> u32 {
+    run(a);
+    run(a);
+
+    a + 1
+}
+
+fn only_tail(a: u32) -> u32 {
+    a + 1
+}
+
+fn not_a_tail(a: u32) {
+    run(a);
+    run(a);
+    run(a);
+}
+
+fn single_tail_closure(xs: Vec<u32>) -> Vec<u32> {
+    xs.into_iter()
+        .map(|x| {
+            compute_something_long(x)
+                .with_option(1)
+                .with_other_option(2)
+                .finish()
+        })
+        .collect()
+}
+
+fn brace_less_arms(k: Kind) -> u32 {
+    match k {
+        Kind::A => compute(1),
+        Kind::B => compute(2),
+        Kind::C => compute(3),
+    }
+}

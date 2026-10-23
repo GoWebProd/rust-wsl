@@ -1,0 +1,5 @@
+fn inner_attr() {
+    #![allow(unused)]
+    let a = 1;
+    run(a);
+}

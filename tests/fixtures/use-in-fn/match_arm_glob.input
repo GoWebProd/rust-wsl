@@ -1,0 +1,10 @@
+fn f(k: u32) {
+    match k {
+        0 => {
+            use Kind::*;
+
+            run(A);
+        }
+        _ => {}
+    }
+}

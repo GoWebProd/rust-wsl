@@ -1,0 +1,15 @@
+fn kinds() {
+    run();
+    unsafe {
+        run();
+    }
+
+    let a = 1;
+    async {
+        run();
+    };
+    let b = 2;
+    const {
+        run(b);
+    };
+}

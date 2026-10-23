@@ -1,0 +1,6 @@
+fn other_rule(a: u32) {
+    run(a);
+    // R1 owns this place
+    let b = a;
+    run(b);
+}
